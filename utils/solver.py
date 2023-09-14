@@ -87,10 +87,10 @@ class Solver:
         self.current_x = x
         self.current_y = y
         framepage = iframe.content_frame()
-        checkbox = framepage.query_selector("[type=checkbox]")
+        checkbox = framepage.query_selector("[role=button]")
 
         while not checkbox:
-            checkbox = framepage.query_selector("[type=checkbox]")
+            checkbox = framepage.query_selector("[role=button]")
             time.sleep(0.1)
 
         width = checkbox.bounding_box()["width"]
