@@ -80,17 +80,16 @@ class Solver:
         while not iframe.bounding_box():
             time.sleep(0.1)
 
-       
         x = iframe.bounding_box()["x"] + random.randint(5, 12)
         y = iframe.bounding_box()["y"] + random.randint(5, 12)
         self.move_to(x, y)
         self.current_x = x
         self.current_y = y
         framepage = iframe.content_frame()
-        checkbox = framepage.query_selector("[role=button]")
+        checkbox = framepage.query_selector("input")
 
         while not checkbox:
-            checkbox = framepage.query_selector("[role=button]")
+            checkbox = framepage.query_selector("input")
             time.sleep(0.1)
 
         width = checkbox.bounding_box()["width"]
