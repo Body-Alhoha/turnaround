@@ -1,5 +1,7 @@
-# turnaround
-Utilizes [playwright](https://playwright.dev/) to automatically solve [Turnstile](https://www.cloudflare.com/products/turnstile/)
+<img src="/photo_2025-03-18_11-57-05.jpg" align="center">
+<span>(paid ad)</span>
+<h1>Turnaround</h1>
+Uses <a href="https://playwright.dev/">playwright</a> to automatically solve <a href="https://www.cloudflare.com/products/turnstile/">Turnstile</a>
 
 ## Installation
 pip install -r requirements.txt
